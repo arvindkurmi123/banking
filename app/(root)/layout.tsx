@@ -4,7 +4,7 @@
 // import Image from "next/image";
 // import { redirect } from "next/navigation";
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -16,6 +16,7 @@ export default async function RootLayout({
   return (
     <main className="flex h-screen w-full font-inter">
       root layout 
+      {children}
       {/* <Sidebar user={loggedIn} />
 
       <div className="flex size-full flex-col">
